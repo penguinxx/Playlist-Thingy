@@ -1,0 +1,8 @@
+.my-button
+{
+    font-size: 14px;
+    padding: 30px 60px;
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+}

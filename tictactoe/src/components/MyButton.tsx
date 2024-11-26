@@ -1,4 +1,5 @@
 import React from "react";
+import '../component_styling/style.css'
 export function MyButton()
 {
     return(
@@ -8,7 +9,7 @@ export function MyButton()
         rel="noopener noreferrer"
         >
 
-            <button> Hoi, im a button Biaaaaatch</button>
+            <button className = "my-button"> Click me pls Senpai 👉🥺👈 </button>
         </a>
         
     );
