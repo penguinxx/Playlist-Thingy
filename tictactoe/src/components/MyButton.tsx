@@ -1,19 +1,20 @@
 import React from "react";
-import '../component_styling/style.css';
-import { user } from '../components/UserContext';
+import '../component_styling/style.css'
+import User from './UserContext';
 
-export function MyButton() {
-    console.log(user); // Debug to check if user is imported correctly
 
+
+export function MyButton({ user }: { user: User }) {
     return (
-        <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            target="_blank"
-            rel="noopener noreferrer"
+        <button
+            className="my-button"
+            onClick={() => {
+                window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            }}
         >
-            <button className="my-button">
-                Click me pls {user.nickname} 🥺
-            </button>
-        </a>
+            You're gonna wanna see this {user.name}. Trust me bro. Click me
+        </button>
     );
 }
+
+        
