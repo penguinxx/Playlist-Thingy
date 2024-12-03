@@ -1,10 +1,10 @@
 import React from "react";
 import '../component_styling/style.css'
-import User from './UserContext';
 
 
 
-export function MyButton({ user }: { user: User }) {
+
+export function MyButton() {
     return (
         <button
             className="my-button"
@@ -12,7 +12,7 @@ export function MyButton({ user }: { user: User }) {
                 window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
             }}
         >
-            You're gonna wanna see this {user.name}. Trust me bro. Click me
+            An important secret lies ahead Lu ~ Click me
         </button>
     );
 }
