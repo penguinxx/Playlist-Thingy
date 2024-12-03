@@ -3,6 +3,8 @@ import User from './components/UserContext';
 import '../src/component_styling/style.css'
 import { MyButton } from './components/MyButton';
 import {UserProfile} from './components/UserContext'
+import {StupidBoredomButton} from './components/MyButton';
+
 
 const stephano: User = 
 { 
@@ -31,7 +33,9 @@ export default function MyApp()
                 
                 
             <div className='component-card'>
-                <MyButton/>  
+                <MyButton/>
+                <StupidBoredomButton/>
+
 
             </div>
         </div>
