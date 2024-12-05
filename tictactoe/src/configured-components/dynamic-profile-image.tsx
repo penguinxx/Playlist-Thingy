@@ -24,19 +24,19 @@ export function UserProfile({user}: {user:User})
 
 
     return (
-        <div>
+        <div className="info-card">
             <img
             src={user.profile_pic_url}
             alt={user.message}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseExit}
             className="avatar"
-            />
-            {isHovered && (
-                <div className="info-card">
-                    <p
-                    className="p-customize">{user.message}</p>
-                </div>
+            />            {isHovered && (
+                
+            <p
+            className="p-customize">{user.message}
+            </p>
+                
             )}
                 
         </div>

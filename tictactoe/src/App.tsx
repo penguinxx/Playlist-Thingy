@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import User from './configured-components/dynamic-profile-image';
-import '../src/styling/style.css';
+import './styling/style.css';
 import  * as DynamicButton from './configured-components/dynamic-buttons';
 import { UserProfile } from './configured-components/dynamic-profile-image';
 import Navbar from "./components/navigation-bar-component"
@@ -22,14 +22,11 @@ export default function MyApp() {
                 <div className='nav-bar'>
                     <Navbar title='My App'/>
                 </div>
-                <div className='info-card'>
-                    <div className='base-info'>
-                        <UserProfile user={stephano} />
-                    </div>
+                <div className='info-card'> 
+                    <UserProfile user={stephano} />   
                 </div>
                 <div className='component-card'>
                     <DynamicButton.RockPlaylistButton/>
-                    
                 </div>
             </div>
         </Router>

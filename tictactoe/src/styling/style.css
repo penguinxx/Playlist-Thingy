@@ -1,3 +1,15 @@
+.stephano-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 0 !important;
+}
+
+
 .my-button {
     font-size: 14px;
     display: flex;
@@ -12,12 +24,14 @@
 .rock-playlist-button {
     display: flex;
     flex-direction: column;
+    transition: ease 0.3s;
     font-size: 14px;
     font-family: monospace;
-    width: 141px;
-    height: 61px;
+    width: fit-content;
     height: fit-content;
-    padding: 5px 5px;
+    max-height:100% ;
+    overflow: hidden;
+    padding: 10px;
     background-color: rgb(39, 41, 43);
     
 }
@@ -30,15 +44,9 @@
 .rock-playlist-button-image {
     width: 30px;
     height: 30px;
-    
     filter: brightness(50);
 }
 
-.base-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2vh;
-}
 
 .discript-style {
     font-size: 16px;
@@ -46,6 +54,20 @@
     margin: 0;
     height: fit-content;
     width: fit-content;
+}
+
+.info-card {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-height: 5vh;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    margin: 1vw 1vh;
+    font-family: monospace;
+    font-size: 11.9;
 }
 
 .avatar {
@@ -58,44 +80,33 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.p-customize
+{
+    display: flex;
+    margin-left: 3vw;
+    margin-top: 2vh;
+}
+
 .avatar:hover {
     transform: scale(1.15);
 }
 
-.stephano-wrapper {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1vh;
-    min-height: 100vh;
-    overflow: visible;
-    padding: 0 !important;
-}
+
 
 .component-card {
+    overflow: hidden;
     display: flex;
-    padding: 2vh;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    margin: 2vw 1.5vh;
     flex-direction: row;
     align-content: space-between;
+    height: 4vh;
     width: auto;
     justify-content: flex-start;
+    padding: 9px;
+    
 }
 
-.info-card {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 100vw;
-    height: fit-content;
-    z-index: 0;
-    margin-top: 2vh;
-    margin-left: 2vh;
-    font-family: monospace;
-    font-size: 11.9;
-}
+
 
 .nav-bar {
     margin: 0;
@@ -107,8 +118,4 @@
     font-family: monospace;
     font-size: 15px;
     background-color: #333;
-}
-.p-customize
-{
-    margin: 0;
 }

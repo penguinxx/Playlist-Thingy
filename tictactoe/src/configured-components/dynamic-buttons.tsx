@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import '../styling/style.css'
 import {DynamicButton} from '../components/DynamicButtons'
 
 export const RockPlaylistButton = () =>
