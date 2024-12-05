@@ -1,17 +1,16 @@
-import React from "react"; 
-import "../component_styling/style.css"
-import { useState } from "react";
+import "../styling/style.css"
+import React, { useState } from "react"
 
 export default interface User {
     name: string;
-    description: string;
+    message: string;
     profile_pic_url: string;
     image_size: number;
 }
 
 export function UserProfile({user}: {user:User})
 {
-    const[isHovered, setIsHovered] = useState<boolean>(false);
+    const[isHovered, setIsHovered] = useState<boolean>(true);
 
     function handleMouseEnter()
     {
@@ -28,14 +27,15 @@ export function UserProfile({user}: {user:User})
         <div>
             <img
             src={user.profile_pic_url}
-            alt={user.description}
+            alt={user.message}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseExit}
             className="avatar"
             />
             {isHovered && (
                 <div className="info-card">
-                    <p>{user.description}</p>
+                    <p
+                    className="p-customize">{user.message}</p>
                 </div>
             )}
                 

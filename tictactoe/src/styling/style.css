@@ -1,0 +1,114 @@
+.my-button {
+    font-size: 14px;
+    display: flex;
+    margin-left: 1vw;
+    width: fit-content;
+    padding: 15px 10px;
+    background-color: rgb(39, 41, 43);
+    font-family: monospace;
+    flex-direction: column;
+}
+
+.rock-playlist-button {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: monospace;
+    width: 141px;
+    height: 61px;
+    height: fit-content;
+    padding: 5px 5px;
+    background-color: rgb(39, 41, 43);
+    
+}
+
+
+.rock-playlist-button:hover {
+    transform: scale(1.1);
+}
+
+.rock-playlist-button-image {
+    width: 30px;
+    height: 30px;
+    
+    filter: brightness(50);
+}
+
+.base-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vh;
+}
+
+.discript-style {
+    font-size: 16px;
+    font-family: monospace;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+    transform: scale(1.15);
+}
+
+.stephano-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 0 !important;
+}
+
+.component-card {
+    display: flex;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    flex-direction: row;
+    align-content: space-between;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.info-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    z-index: 0;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-family: monospace;
+    font-size: 11.9;
+}
+
+.nav-bar {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: fit-content;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: #333;
+}
+.p-customize
+{
+    margin: 0;
+}
