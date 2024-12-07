@@ -7,8 +7,8 @@ export const RockPlaylistButton = () =>
     link = "https://www.youtube.com/watch?v=HhVTuowsBrQ&list=PLD1W2UDUZ6NuiYQfr830ftP5EK_7lliuE&pp=gAQB"
     image="https://img.icons8.com/win10/512w/FFFFFF/rock-music.png"
     imgClass="rock-playlist-button-image"
-    text = "My RockPlaylist"
-    textClass=".rock-playlist-button-text"
+    text = "My Rock Playlist"
+    textClass="button-stylized-text"
     />
     
 );

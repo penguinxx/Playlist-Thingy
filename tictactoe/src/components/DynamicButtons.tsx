@@ -11,30 +11,27 @@ interface IButton
     textClass?:string
 }
 
-export function DynamicButton({class_name, link, image,imgClass, text}: IButton) {
-    const[isHovered, setIsHovered] = useState<boolean>(false);
+export function DynamicButton({ class_name, link, image, imgClass, text, textClass }: IButton) {
+    const [isHovered, setIsHovered] = useState<boolean>(false);
 
-    function handleMouseEnter()
-    {
-        setIsHovered(true)
-    }
-    function handleMouseExit()
-    {
-        setIsHovered(false)
+    function handleMouseEnter() {
+        setIsHovered(true);
     }
 
-
+    function handleMouseExit() {
+        setIsHovered(false);
+    }
 
     return (
         <button
-            className= {class_name}
+            className={class_name}
             onClick={() => {
                 window.open(link);
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseExit}
         >
-            {text && text}
+            {text && <span className={textClass}>{text}</span>}
             {image && <img src={image} className={imgClass}/>}
             
             {isHovered && (
@@ -43,6 +40,7 @@ export function DynamicButton({class_name, link, image,imgClass, text}: IButton)
         </button>
     );
 }
+
 
 
 

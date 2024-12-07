@@ -23,7 +23,7 @@ export default function MyApp() {
                     <Navbar title='My App'/>
                 </div>
                 <div className='info-card'> 
-                    <UserProfile user={stephano} />   
+                    <UserProfile user={stephano}/>   
                 </div>
                 <div className='component-card'>
                     <DynamicButton.RockPlaylistButton/>

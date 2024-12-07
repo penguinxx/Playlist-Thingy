@@ -31,18 +31,16 @@ export function UserProfile({user}: {user:User})
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseExit}
             className="avatar"
-            />            {isHovered && (
-                
-            <p
-            className="p-customize">{user.message}
-            </p>
-                
+            />
+            {isHovered && (               
+                <p
+                className="p-customize"
+                >{user.message}
+                </p>              
             )}
                 
         </div>
     );
-
-
 }
 
 

@@ -9,105 +9,6 @@
     padding: 0 !important;
 }
 
-
-.my-button {
-    font-size: 14px;
-    display: flex;
-    margin-left: 1vw;
-    width: fit-content;
-    padding: 15px 10px;
-    background-color: rgb(39, 41, 43);
-    font-family: monospace;
-    flex-direction: column;
-}
-
-.rock-playlist-button {
-    display: flex;
-    flex-direction: column;
-    transition: ease 0.3s;
-    font-size: 14px;
-    font-family: monospace;
-    width: fit-content;
-    height: fit-content;
-    max-height:100% ;
-    overflow: hidden;
-    padding: 10px;
-    background-color: rgb(39, 41, 43);
-    
-}
-
-
-.rock-playlist-button:hover {
-    transform: scale(1.1);
-}
-
-.rock-playlist-button-image {
-    width: 30px;
-    height: 30px;
-    filter: brightness(50);
-}
-
-
-.discript-style {
-    font-size: 16px;
-    font-family: monospace;
-    margin: 0;
-    height: fit-content;
-    width: fit-content;
-}
-
-.info-card {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    flex-direction: row;
-    max-height: 5vh;
-    width: 100vw;
-    height: auto;
-    z-index: 0;
-    margin: 1vw 1vh;
-    font-family: monospace;
-    font-size: 11.9;
-}
-
-.avatar {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #000;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.p-customize
-{
-    display: flex;
-    margin-left: 3vw;
-    margin-top: 2vh;
-}
-
-.avatar:hover {
-    transform: scale(1.15);
-}
-
-
-
-.component-card {
-    overflow: hidden;
-    display: flex;
-    margin: 2vw 1.5vh;
-    flex-direction: row;
-    align-content: space-between;
-    height: 4vh;
-    width: auto;
-    justify-content: flex-start;
-    padding: 9px;
-    
-}
-
-
-
 .nav-bar {
     margin: 0;
     display: flex;
@@ -119,3 +20,98 @@
     font-size: 15px;
     background-color: #333;
 }
+
+.info-card {
+    display: flex;
+    margin: 1vw 1vh;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    font-family: monospace;
+    font-size: 11.9;
+}
+
+.avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 100%;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.p-customize
+{
+    display: flex;
+    margin-left: 3vw;
+    justify-content: baseline;
+    margin-top: 3.9vh;
+}
+
+.avatar:hover {
+    transform: scale(1.15);
+}
+
+.component-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 1vh 1vw;
+    height: 15vh;
+    width: auto;
+    justify-content: flex-start;
+    padding: 9px;
+    
+}
+
+.button-stylized-text
+{
+    display: flex;
+    font-family: monospace;
+    font-size: 11.9px;
+    
+}
+
+.rock-playlist-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: ease 0.3s;
+    font-size: 14px;
+    font-family: monospace;
+    width: 15vw;
+    height: auto;
+    max-height:100% ;
+    overflow: hidden;
+    padding: 5px;
+    background-color: rgb(39, 41, 43);
+}
+
+.rock-playlist-button:hover {
+    transform: scale(1.05);
+}
+
+.rock-playlist-button-image {
+    width: 30px;
+    height: 30px;
+    filter: brightness(50);
+}
+
+.discript-style {
+    font-size: 16px;
+    font-family: monospace;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
