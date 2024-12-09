@@ -46,9 +46,9 @@
 .p-customize
 {
     display: flex;
-    margin-left: 3vw;
+    margin-left: 1vw;
     justify-content: baseline;
-    margin-top: 3.9vh;
+    margin-top: 3vh;
 }
 
 .avatar:hover {
@@ -60,10 +60,11 @@
     display: flex;
     flex-direction: row;
     margin: 1vh 1vw;
-    height: 15vh;
+    height: fit-content;
+    column-gap: 1.9vh;
     width: auto;
     justify-content: flex-start;
-    padding: 9px;
+    padding: 1vh;
     
 }
 
@@ -71,41 +72,39 @@
 {
     display: flex;
     font-family: monospace;
-    font-size: 11.9px;
-    
+    font-size: 11.9px;  
 }
 
-.rock-playlist-button {
+.standard-button {
     display: flex;
     align-items: center;
     flex-direction: row;
+    column-gap: 10px;
     transition: ease 0.3s;
-    font-size: 14px;
-    font-family: monospace;
-    width: 15vw;
-    height: auto;
+    width: fit-content;
+    height: 5vh;
     max-height:100% ;
     overflow: hidden;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(39, 41, 43);
 }
 
-.rock-playlist-button:hover {
-    transform: scale(1.05);
+.standard-button:hover {
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+
 }
 
-.rock-playlist-button-image {
+
+.standard-button-image {
     width: 30px;
     height: 30px;
     filter: brightness(50);
 }
 
 .discript-style {
-    font-size: 16px;
+    font-size: 11.9px;
     font-family: monospace;
-    margin: 0;
-    height: fit-content;
-    width: fit-content;
+    
 }
 
 

@@ -1,6 +1,3 @@
-import { useState } from "react"
-
-
 interface IButton
 {
     class_name: string
@@ -11,32 +8,19 @@ interface IButton
     textClass?:string
 }
 
-export function DynamicButton({ class_name, link, image, imgClass, text, textClass }: IButton) {
-    const [isHovered, setIsHovered] = useState<boolean>(false);
-
-    function handleMouseEnter() {
-        setIsHovered(true);
-    }
-
-    function handleMouseExit() {
-        setIsHovered(false);
-    }
-
+export function StandardButton({ class_name, link, image, imgClass, text, textClass }: IButton) {
+    
     return (
         <button
             className={class_name}
             onClick={() => {
                 window.open(link);
             }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseExit}
+           
         >
-            {text && <span className={textClass}>{text}</span>}
             {image && <img src={image} className={imgClass}/>}
-            
-            {isHovered && (
-                <div className="component-card"></div>
-            )}
+            {text && <span className={textClass}>{text}</span>}        
+               
         </button>
     );
 }
