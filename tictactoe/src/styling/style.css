@@ -25,6 +25,8 @@
     display: flex;
     margin: 1vw 1vh;
     justify-content: flex-start;
+    column-gap: 1vh;
+    align-items: center;
     flex-direction: row;
     width: 100vw;
     height: auto;
@@ -46,9 +48,8 @@
 .p-customize
 {
     display: flex;
-    margin-left: 1vw;
-    justify-content: baseline;
-    margin-top: 3vh;
+    font-family: monospace;
+    
 }
 
 .avatar:hover {
@@ -61,7 +62,9 @@
     flex-direction: row;
     margin: 1vh 1vw;
     height: fit-content;
+    flex-wrap: wrap;
     column-gap: 1.9vh;
+    row-gap:5vw;
     width: auto;
     justify-content: flex-start;
     padding: 1vh;
@@ -81,7 +84,7 @@
     flex-direction: row;
     column-gap: 10px;
     transition: ease 0.3s;
-    width: fit-content;
+    width: 25vw;
     height: 5vh;
     max-height:100% ;
     overflow: hidden;

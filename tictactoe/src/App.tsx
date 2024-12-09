@@ -10,7 +10,7 @@ import Navbar from "./components/navigation-bar-component"
 const stephano: User = 
 { 
     name: "Stephano",
-    message: "Hey Du ~ <3",
+    message: "Hey Lu ~ <3",
     profile_pic_url: "https://pbs.twimg.com/media/C1VAxYgUoAAfQZ2.jpg",
     image_size: 90
 };
@@ -29,6 +29,9 @@ export default function MyApp() {
                     <StandardButton.RockPlaylistButton/>
                     <StandardButton.AlternativePlaylistButton/>
                     <StandardButton.WorkoutPlaylistButton/>
+                    <StandardButton.JapKpopPlaylistButton/>
+                    <StandardButton.LofiPlaylistButton/>
+                    
 
                 </div>
             </div>

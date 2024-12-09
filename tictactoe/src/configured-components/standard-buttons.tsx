@@ -40,7 +40,31 @@ export const AlternativePlaylistButton = () =>
         );
 
 
+    export const JapKpopPlaylistButton = () =>
+        (
+            <StandardButton
+            class_name="standard-button"
+            link = "https://www.youtube.com/watch?v=kzdJkT4kp-A&list=PLD1W2UDUZ6NvM5D-0syqB8uh0zHs-9sSi"
+            image="https://cdn-icons-png.flaticon.com/512/7847/7847995.png"
+            imgClass="standard-button-image"
+            text = "Jap & K-pop"
+            textClass="discript-style"
+            />
+            
+        );
 
+    export const LofiPlaylistButton = () =>
+        (
+            <StandardButton
+            class_name="standard-button"
+            link = "https://www.youtube.com/watch?v=kzdJkT4kp-A&list=PLD1W2UDUZ6NvM5D-0syqB8uh0zHs-9sSi"
+            image="https://cdn-icons-png.flaticon.com/128/1184/1184633.png"
+            imgClass="standard-button-image"
+            text = "Lofi & Unwind"
+            textClass="discript-style"
+            />
+            
+        ); 
 
 
 export const RickRollButton = () =>

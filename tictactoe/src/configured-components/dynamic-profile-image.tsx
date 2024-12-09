@@ -10,7 +10,7 @@ export default interface User {
 
 export function UserProfile({user}: {user:User})
 {
-    const[isHovered, setIsHovered] = useState<boolean>(true);
+    const[isHovered, setIsHovered] = useState<boolean>(false);
 
     function handleMouseEnter()
     {
