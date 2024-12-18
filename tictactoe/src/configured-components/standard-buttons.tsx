@@ -57,7 +57,7 @@ export const AlternativePlaylistButton = () =>
         (
             <StandardButton
             class_name="standard-button"
-            link = "https://www.youtube.com/watch?v=kzdJkT4kp-A&list=PLD1W2UDUZ6NvM5D-0syqB8uh0zHs-9sSi"
+            link = "https://www.youtube.com/watch?v=No0pMFSXtSc&list=PLD1W2UDUZ6Nt5P5x7yjcJIXTopCIld9-8"
             image="https://cdn-icons-png.flaticon.com/128/1184/1184633.png"
             imgClass="standard-button-image"
             text = "Lofi & Unwind"
@@ -70,9 +70,10 @@ export const AlternativePlaylistButton = () =>
 export const RickRollButton = () =>
     (
         <StandardButton
-        class_name="my-button"
-        link = "https://www.youtube.com/watch?v=HhVTuowsBrQ&list=PLD1W2UDUZ6NuiYQfr830ftP5EK_7lliuE&pp=gAQB"
-        text = "A secret lies ahead Lu ~ Click me"
+        class_name="standard-button"
+        link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        text = "A secret lies ahead Sophia ~ Click me"
+        textClass="discript-style"
         />
         
     );

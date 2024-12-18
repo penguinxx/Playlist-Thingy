@@ -2,10 +2,10 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     gap: 1vh;
     min-height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     padding: 0 !important;
 }
 
@@ -23,9 +23,9 @@
 
 .info-card {
     display: flex;
-    margin: 1vw 1vh;
+    margin: 10px 5px;
     justify-content: flex-start;
-    column-gap: 1vh;
+    column-gap: 30px;
     align-items: center;
     flex-direction: row;
     width: 100vw;
@@ -45,11 +45,9 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.p-customize
-{
+.p-customize {
     display: flex;
     font-family: monospace;
-    
 }
 
 .avatar:hover {
@@ -60,22 +58,20 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    margin: 1vh 1vw;
+    margin: 10px 10px;
     height: fit-content;
     flex-wrap: wrap;
-    column-gap: 1.9vh;
-    row-gap:5vw;
+    column-gap: 20px;
+    row-gap: 20px;
     width: auto;
+    padding: 0%;
     justify-content: flex-start;
-    padding: 1vh;
-    
 }
 
-.button-stylized-text
-{
+.button-stylized-text {
     display: flex;
     font-family: monospace;
-    font-size: 11.9px;  
+    font-size: 11.9px;
 }
 
 .standard-button {
@@ -84,19 +80,19 @@
     flex-direction: row;
     column-gap: 10px;
     transition: ease 0.3s;
-    width: 25vw;
-    height: 5vh;
-    max-height:100% ;
+    width: 185px;
+    height: 90px;
+    max-height: 100%;
     overflow: hidden;
-    padding: 10px;
+    padding: 0px 5px;
     background-color: rgb(39, 41, 43);
 }
 
+
+
 .standard-button:hover {
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
-
 }
-
 
 .standard-button-image {
     width: 30px;
@@ -107,13 +103,4 @@
 .discript-style {
     font-size: 11.9px;
     font-family: monospace;
-    
 }
-
-
-
-
-
-
-
-
