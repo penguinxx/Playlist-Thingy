@@ -72,7 +72,7 @@ export const RickRollButton = () =>
         <StandardButton
         class_name="standard-button"
         link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        text = "A secret lies ahead Sophia ~ Click me"
+        text = "A secret lies ahead <3 ~ Click me"
         textClass="discript-style"
         />
         
